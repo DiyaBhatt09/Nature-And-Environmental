@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature & Environment</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f8f0;
+      color: #243b2a;
+    }
+    header {
+      background: #174d32;
+      color: white;
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    header h2 { margin: 0; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 8px;
+    }
+    .hero {
+      min-height: 440px;
+      padding: 80px 8%;
+      text-align: center;
+      color: white;
+      background:
+        linear-gradient(#102b1a66, #102b1a88),
+        url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero h1 { font-size: clamp(36px, 6vw, 60px); margin: 0 0 16px; }
+    .hero p { font-size: 19px; line-height: 1.7; }
+    .hero a {
+      background: #a7e36b;
+      color: #173b22;
+      padding: 13px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    section { padding: 55px 8%; text-align: center; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+      margin-top: 28px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px #173b2212;
+    }
+    .card span { font-size: 38px; }
+    .card h3 { color: #24683e; }
+    .about p { max-width: 720px; margin: auto; line-height: 1.8; }
+    footer {
+      background: #174d32;
+      color: white;
+      text-align: center;
+      padding: 24px;
+    }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>🌿 Nature & Environment</h2>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#protect">Protect Nature</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <h1>Let's Make Our Planet Greener</h1>
+      <p>Love nature. Protect wildlife. Save our beautiful Earth.</p>
+      <a href="#protect">Explore More 🌱</a>
+    </section>
+
+    <section class="about" id="about">
+      <h2>🌍 About Our Environment</h2>
+      <p>
+        Nature gives us fresh air, clean water, food and life.
+        Protecting forests, reducing pollution and saving resources
+        can help create a healthier planet for future generations.
+      </p>
+    </section>
+
+    <section id="protect">
+      <h2>🌱 How Can We Help?</h2>
+      <div class="cards">
+        <article class="card">
+          <span>🌳</span>
+          <h3>Plant Trees</h3>
+          <p>Plant and protect trees to support wildlife and cleaner air.</p>
+        </article>
+        <article class="card">
+          <span>💧</span>
+          <h3>Save Water</h3>
+          <p>Turn off taps and use water carefully every day.</p>
+        </article>
+        <article class="card">
+          <span>♻️</span>
+          <h3>Reduce Waste</h3>
+          <p>Reuse items, recycle materials and avoid single-use plastic.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>🌿 Small Actions, Big Changes.</p>
+    <p>Made with love for our planet 🌎</p>
+  </footer>
+</body>
+</html>
