@@ -1,0 +1,207 @@
+
+/* ===== General Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f8f1;
+  color: #243b2a;
+  line-height: 1.6;
+}
+
+/* ===== Header & Navigation ===== */
+header {
+  background: #174d32;
+  color: #ffffff;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+header h2 {
+  font-size: 25px;
+  letter-spacing: 0.5px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #b9f28b;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  min-height: 440px;
+  padding: 80px 8%;
+  text-align: center;
+  color: #ffffff;
+  background:
+    linear-gradient(rgba(10, 35, 20, 0.55),
+                    rgba(10, 35, 20, 0.65)),
+    url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1800&q=85")
+    center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 19px;
+  max-width: 650px;
+  margin-bottom: 25px;
+}
+
+.hero a {
+  display: inline-block;
+  background: #a7e36b;
+  color: #173b22;
+  text-decoration: none;
+  padding: 13px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.hero a:hover {
+  background: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* ===== Common Sections ===== */
+section {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 32px;
+  color: #205b38;
+  margin-bottom: 20px;
+}
+
+/* ===== About Section ===== */
+.about {
+  background: #ffffff;
+}
+
+.about p {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.9;
+  color: #526256;
+}
+
+/* ===== Nature Cards ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  margin-top: 35px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 30px 22px;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(30, 70, 40, 0.09);
+  border: 1px solid #e5eee2;
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(30, 70, 40, 0.15);
+}
+
+.card span {
+  font-size: 45px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  color: #24683e;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #5c6b5f;
+  font-size: 15px;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #123d28;
+  color: #ffffff;
+  text-align: center;
+  padding: 28px 15px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 5%;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero {
+    min-height: 380px;
+    padding: 60px 6%;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 45px 6%;
+  }
+
+  section h2 {
+    font-size: 27px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
